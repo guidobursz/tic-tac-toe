@@ -15,7 +15,7 @@ const Board = ({ data }) => {
       {data.squares.map((val, index) => (
         <div
           key={index}
-          className="min-h-[97.34px] h-full w-full bg-slate-800 flex justify-center items-center"
+          className="min-h-[97.333333333px] h-full w-full bg-slate-800 flex justify-center items-center"
           onClick={() => {
             handleClick(index);
           }}
