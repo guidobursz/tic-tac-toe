@@ -25,8 +25,7 @@ const Layout = () => {
   const [winner, setWinner] = useState(null);
 
   const checkWinner = (boardToCheck) => {
-    console.log(boardToCheck);
-
+    // console.log(boardToCheck);
     let winner;
 
     for (const combo of WINNER_POS) {
@@ -39,7 +38,7 @@ const Layout = () => {
       ) {
         winner = boardToCheck[a];
         setWinner(winner);
-        console.log("winner is:", winner);
+        // console.log("winner is:", winner);
       }
     }
     if (!boardToCheck.includes(null)) {
@@ -72,7 +71,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className="w-full border-2 border-slate-200 p-6 rounded-xl flex flex-col text-center gap-4 justify-center items-center">
+      <div className="w-[337.5px] border-2 border-slate-200 p-6 rounded-xl flex flex-col text-center gap-4 justify-center items-center">
         <h1 className="text-4xl text-white font-bold">Tic Tac Toe</h1>
         <div className="w-[300px] h-[300px]">
           <Board data={{ squares, handleTurn, winner }} />
